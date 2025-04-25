@@ -135,9 +135,9 @@ GET http://localhost:8080/calculate?operation=add&num1=5&num2=3
 
 ## 📸 Screenshots
 
-| Light Theme | Dark Theme | API Response |
-|-------------|------------|--------------|
-| ![](screenshots/frontend-light.png) | ![](screenshots/frontend-dark.png) | ![](screenshots/api-response.png) |
+| Calculator Ui |
+|-------------|
+| ![](screenshots/calculator.png) |
 
 ---
 
