@@ -137,7 +137,7 @@ GET http://localhost:8080/calculate?operation=add&num1=5&num2=3
 
 | Calculator Ui |
 |-------------|
-| ![](screenshots/calculator.png) |
+| ![](screenshots/calc.png) |
 
 ---
 
