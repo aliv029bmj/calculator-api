@@ -172,7 +172,7 @@ Licensed under the **MIT License**. See the `LICENSE` file for details.
 
 ## 📬 Contact
 
-- 🔗 GitHub: [Ali Novruzj](https://github.com/aliv029bmj)  
-- 💼 LinkedIn: [Ali Novruz](www.linkedin.com/in/ali-novruz-447115356)  
+- 🔗 GitHub: [Ali Novruz](https://github.com/aliv029bmj)  
+- 💼 LinkedIn: [Ali Novruz](https://www.linkedin.com/in/ali-novruz-447115356/)  
 - 📧 Email: alinovruz29@gmail.com
 
