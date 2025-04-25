@@ -1,169 +1,178 @@
-🧮 Calculator REST API with Frontend
-A sleek and modern calculator application built with a Spring Boot REST API backend and a React frontend. This project allows users to perform basic arithmetic operations (addition, subtraction, multiplication, division) through a user-friendly interface. It’s my first full-stack project, built to learn and showcase REST API development, React frontend design, and modern UI styling with Tailwind CSS. 🚀
-Built with ❤️ from Baku, Azerbaijan 🇦🇿
+# 🧮 Calculator REST API with Frontend
 
-🌟 Features
+A sleek and modern **calculator application** built with a **Spring Boot REST API** backend and a **React + Tailwind CSS** frontend. This full-stack project allows users to perform basic arithmetic operations with a beautiful and responsive UI.  
+  
+> "Mathematics is the language of the universe, and this calculator is my small step into that universe."  
+> — Built with ❤️ in Baku, Azerbaijan 🇦🇿
 
-Backend: REST API with a /calculate endpoint for arithmetic operations.
-Frontend: Modern React-based UI with Tailwind CSS for a sleek design.
-Operations: Supports add, subtract, multiply, and divide.
-Error Handling: Handles invalid inputs and division by zero with clear error messages.
-Responsive Design: Works seamlessly on both desktop and mobile devices.
-Animations: Smooth fade-in animations for results and error messages.
+---
 
+## 🌟 Features
 
-🛠️ Tech Stack
+- 🔁 **RESTful Backend** – `/calculate` endpoint supporting all basic operations  
+- 🎨 **Modern Frontend** – Built with **React** and **Tailwind CSS** for sleek design  
+- ➕ **Operations** – Add, Subtract, Multiply, Divide  
+- ⚠️ **Error Handling** – Clear messages for invalid input and division by zero  
+- 📱 **Responsive Design** – Works on desktop & mobile  
+- ✨ **Smooth Animations** – Fade-in effects for results and errors  
 
+---
 
+## 🛠️ Tech Stack
 
-Category
-Technologies
+| Category   | Technologies                  |
+|------------|-------------------------------|
+| Backend    | Java 17, Spring Boot, Maven   |
+| Frontend   | React, Tailwind CSS, Vite     |
+| Testing    | Postman (for API)             |
 
+---
 
+## 📂 Project Structure
 
-Backend
-   
-
-
-Frontend
-   
-
-
-Testing
-
-
-
-
-📂 Project Structure
+```
 calculator-api/
 ├── backend/               # Spring Boot backend
 │   ├── src/
-│   ├── pom.xml
-│   └── ...
+│   └── pom.xml
 ├── frontend/              # React frontend
 │   ├── src/
-│   ├── package.json
-│   └── ...
+│   └── package.json
 ├── postman/               # Postman collection for API testing
 │   └── CalculatorAPI.postman_collection.json
-├── screenshots/           # Screenshots and visuals
+├── screenshots/           # UI and API visuals
 │   ├── frontend-light.png
 │   ├── frontend-dark.png
 │   ├── api-response.png
 │   └── demo.gif
 └── README.md
+```
 
+---
 
-📋 Prerequisites
-Before you begin, ensure you have the following installed:
+## 📋 Prerequisites
 
-Java 17: For the Spring Boot backend.
-Maven: To manage backend dependencies.
-Node.js (LTS, e.g., 20.x): For the React frontend.
-Postman (optional): For API testing.
+Make sure you have the following installed:
 
+- 🧠 **Java 17**
+- 🛠️ **Maven**
+- 🌐 **Node.js (LTS, e.g., 20.x)**
+- 🧪 **Postman** (optional, for API testing)
 
-⚙️ Installation
-Backend Setup
+---
 
-Clone the repository:git clone https://github.com/your-username/calculator-api.git
+## ⚙️ Installation
 
+### 🔧 Backend Setup
 
-Navigate to the backend directory:cd calculator-api/backend
+```bash
+git clone https://github.com/your-username/calculator-api.git
+cd calculator-api/backend
+mvn spring-boot:run
+```
 
+API will be available at: [http://localhost:8080](http://localhost:8080)
 
-Build and run the backend:mvn spring-boot:run
+---
 
+### 💻 Frontend Setup
 
-The API will be available at http://localhost:8080.
+```bash
+cd calculator-api/frontend
+npm install
+npm run dev
+```
 
-Frontend Setup
+Frontend will run on: [http://localhost:5173](http://localhost:5173)
 
-Navigate to the frontend directory:cd calculator-api/frontend
+---
 
+## 🌐 API Endpoint
 
-Install dependencies:npm install
+### `GET /calculate`
 
+**Query Parameters:**
 
-Run the frontend:npm run dev
+| Parameter | Type    | Description                          |
+|-----------|---------|--------------------------------------|
+| operation | string  | `add`, `subtract`, `multiply`, `divide` |
+| num1      | double  | First number                         |
+| num2      | double  | Second number                        |
 
-
-The frontend will be available at http://localhost:5173.
-
-
-🌐 API Endpoint
-GET /calculate
-Performs a calculation based on the provided operation and numbers.
-Parameters
-
-operation: add, subtract, multiply, or divide
-num1: First number (double)
-num2: Second number (double)
-
-Example Request
+**Example:**
+```
 GET http://localhost:8080/calculate?operation=add&num1=5&num2=3
+```
 
-Example Response
+**Success Response:**
+```json
 { "result": 8 }
+```
 
-Error Response (e.g., division by zero)
+**Error Response:**
+```json
 { "error": "Cannot divide by zero" }
+```
 
+---
 
-🖥️ Frontend Usage
+## 💽 Frontend Usage
 
-Open http://localhost:5173 in your browser.
-Enter two numbers in the input fields.
-Select an operation from the dropdown.
-Click Calculate to see the result.
-Use the Clear button to reset the form.
-Check for error messages (e.g., division by zero).
+1. Open `http://localhost:5173`
+2. Enter two numbers
+3. Choose an operation
+4. Click **Calculate**
+5. View the result or error
+6. Use **Clear** to reset the form
 
-Demo
-Here’s a quick demo of the calculator in action:
+---
 
+## 🎮️ Demo
 
-📸 Screenshots
-Light Theme Interface
+![Calculator Demo](screenshots/demo.gif)
 
-Dark Theme Interface (Alternative Design)
+---
 
-API Response in Postman
+## 📸 Screenshots
 
+| Light Theme | Dark Theme | API Response |
+|-------------|------------|--------------|
+| ![](screenshots/frontend-light.png) | ![](screenshots/frontend-dark.png) | ![](screenshots/api-response.png) |
 
-🧪 Testing
-API Testing
+---
 
-Import the Postman collection from postman/CalculatorAPI.postman_collection.json.
-Run the requests to test the /calculate endpoint with different operations.
-Verify the responses for both successful calculations and error cases.
+## 🧚️‍♂️ Testing
 
-Frontend Testing
+### 🔍 API Testing
 
-Open the frontend UI at http://localhost:5173.
-Test all operations (add, subtract, multiply, divide).
-Test error scenarios (e.g., divide by zero, empty inputs).
-Ensure the UI is responsive on different screen sizes.
+- Open Postman
+- Import `postman/CalculatorAPI.postman_collection.json`
+- Run requests for different operations and test error cases
 
+### 🧪 Frontend Testing
 
-📜 License
-This project is licensed under the MIT License. See the LICENSE file for details.
+- Interact with the calculator at `http://localhost:5173`
+- Try all operations and edge cases
+- Test on various screen sizes for responsiveness
 
-🙌 Acknowledgments
+---
 
-Built with ❤️ from Baku, Azerbaijan 🇦🇿
-This project was a great learning experience for me as I explored full-stack development with Java, Spring Boot, and React.
-Special thanks to the open-source community for providing amazing tools like Tailwind CSS and Vite.
+## 📜 License
 
+Licensed under the **MIT License**. See the `LICENSE` file for details.
 
-📬 Contact
-Feel free to reach out if you have any questions or suggestions!
+---
 
-GitHub: your-username
-LinkedIn: your-linkedin-profile
-Email: your-email@example.com
+## 🙌 Acknowledgments
 
+- Built with ❤️ from **Baku, Azerbaijan 🇦🇿**
+- Thanks to the open-source community for tools like **Tailwind CSS**, **Spring Boot**, and **Vite**
 
+---
 
-"Mathematics is the language of the universe, and this calculator is my small step into that universe!" – Built with passion in Baku, Azerbaijan. 🧮
+## 📬 Contact
+
+- 🔗 GitHub: [@your-username](https://github.com/your-username)  
+- 💼 LinkedIn: [your-linkedin-profile](https://linkedin.com/in/your-linkedin-profile)  
+- 📧 Email: your-email@example.com
 
