@@ -172,7 +172,7 @@ Licensed under the **MIT License**. See the `LICENSE` file for details.
 
 ## 📬 Contact
 
-- 🔗 GitHub: [@your-username](https://github.com/your-username)  
-- 💼 LinkedIn: [your-linkedin-profile](https://linkedin.com/in/your-linkedin-profile)  
-- 📧 Email: your-email@example.com
+- 🔗 GitHub: [Ali Novruzj](https://github.com/aliv029bmj)  
+- 💼 LinkedIn: [Ali Novruz](www.linkedin.com/in/ali-novruz-447115356)  
+- 📧 Email: alinovruz29@gmail.com
 
