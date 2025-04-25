@@ -66,7 +66,7 @@ Make sure you have the following installed:
 ### 🔧 Backend Setup
 
 ```bash
-git clone https://github.com/your-username/calculator-api.git
+git clone https://github.com/aliv029bmj/calculator-api.git
 cd calculator-api/backend
 mvn spring-boot:run
 ```
